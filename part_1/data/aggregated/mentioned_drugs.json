@@ -1,0 +1,173 @@
+[
+  {
+    "atccode":"A04AD",
+    "drug":"DIPHENHYDRAMINE",
+    "id":"NCT01967433",
+    "publication_title":"Use of Diphenhydramine as an Adjunctive Sedative for Colonoscopy in Patients Chronically on Opioids",
+    "article_type":"clinical_trials",
+    "journal":"Journal of emergency nursing",
+    "date":"2020-01-01 00:00:00.000000"
+  },
+  {
+    "atccode":"A04AD",
+    "drug":"DIPHENHYDRAMINE",
+    "id":"NCT04189588",
+    "publication_title":"Phase 2 Study IV QUZYTTIR\u2122 (Cetirizine Hydrochloride Injection) vs V Diphenhydramine",
+    "article_type":"clinical_trials",
+    "journal":"Journal of emergency nursing",
+    "date":"2020-01-01 00:00:00.000000"
+  },
+  {
+    "atccode":"A04AD",
+    "drug":"DIPHENHYDRAMINE",
+    "id":"NCT04237091",
+    "publication_title":"Feasibility of a Randomized Controlled Clinical Trial Comparing the Use of Cetirizine to Replace Diphenhydramine in the Prevention of Reactions Related to Paclitaxel",
+    "article_type":"clinical_trials",
+    "journal":"Journal of emergency nursing",
+    "date":"2020-01-01 00:00:00.000000"
+  },
+  {
+    "atccode":"R01AD",
+    "drug":"BETAMETHASONE",
+    "id":"NCT04153396",
+    "publication_title":"Preemptive Infiltration With Betamethasone and Ropivacaine for Postoperative Pain in Laminoplasty or \\xc3\\xb1 Laminectomy",
+    "article_type":"clinical_trials",
+    "journal":"H\u00f4pitaux Universitaires de Gen\u00e8ve",
+    "date":"2020-01-01 00:00:00.000000"
+  },
+  {
+    "atccode":"A01AD",
+    "drug":"EPINEPHRINE",
+    "id":"NCT04188184",
+    "publication_title":"Tranexamic Acid Versus Epinephrine During Exploratory Tympanotomy",
+    "article_type":"clinical_trials",
+    "journal":"Journal of emergency nursing\\xc3\\x28",
+    "date":"2020-04-27 00:00:00.000000"
+  },
+  {
+    "atccode":"A04AD",
+    "drug":"DIPHENHYDRAMINE",
+    "id":"1",
+    "publication_title":"A 44-year-old man with erythema of the face diphenhydramine, neck, and chest, weakness, and palpitations",
+    "article_type":"pubmed",
+    "journal":"Journal of emergency nursing",
+    "date":"2019-01-01 00:00:00.000000"
+  },
+  {
+    "atccode":"A04AD",
+    "drug":"DIPHENHYDRAMINE",
+    "id":"2",
+    "publication_title":"An evaluation of benadryl, pyribenzamine, and other so-called diphenhydramine antihistaminic drugs in the treatment of allergy.",
+    "article_type":"pubmed",
+    "journal":"Journal of emergency nursing",
+    "date":"2019-01-01 00:00:00.000000"
+  },
+  {
+    "atccode":"A04AD",
+    "drug":"DIPHENHYDRAMINE",
+    "id":"3",
+    "publication_title":"Diphenhydramine hydrochloride helps symptoms of ciguatera fish poisoning.",
+    "article_type":"pubmed",
+    "journal":"The Journal of pediatrics",
+    "date":"2019-01-02 00:00:00.000000"
+  },
+  {
+    "atccode":"S03AA",
+    "drug":"TETRACYCLINE",
+    "id":"4",
+    "publication_title":"Tetracycline Resistance Patterns of Lactobacillus buchneri Group Strains.",
+    "article_type":"pubmed",
+    "journal":"Journal of food protection",
+    "date":"2020-01-01 00:00:00.000000"
+  },
+  {
+    "atccode":"S03AA",
+    "drug":"TETRACYCLINE",
+    "id":"5",
+    "publication_title":"Appositional Tetracycline bone formation rates in the Beagle.",
+    "article_type":"pubmed",
+    "journal":"American journal of veterinary research",
+    "date":"2020-01-02 00:00:00.000000"
+  },
+  {
+    "atccode":"S03AA",
+    "drug":"TETRACYCLINE",
+    "id":"6",
+    "publication_title":"Rapid reacquisition of contextual fear following extinction in mice: effects of amount of extinction, tetracycline acute ethanol withdrawal, and ethanol intoxication.",
+    "article_type":"pubmed",
+    "journal":"Psychopharmacology",
+    "date":"2020-01-01 00:00:00.000000"
+  },
+  {
+    "atccode":"V03AB",
+    "drug":"ETHANOL",
+    "id":"6",
+    "publication_title":"Rapid reacquisition of contextual fear following extinction in mice: effects of amount of extinction, tetracycline acute ethanol withdrawal, and ethanol intoxication.",
+    "article_type":"pubmed",
+    "journal":"Psychopharmacology",
+    "date":"2020-01-01 00:00:00.000000"
+  },
+  {
+    "atccode":"A01AD",
+    "drug":"EPINEPHRINE",
+    "id":"7",
+    "publication_title":"The High Cost of Epinephrine Autoinjectors and Possible Alternatives.",
+    "article_type":"pubmed",
+    "journal":"The journal of allergy and clinical immunology. In practice",
+    "date":"2020-02-01 00:00:00.000000"
+  },
+  {
+    "atccode":"A01AD",
+    "drug":"EPINEPHRINE",
+    "id":"8",
+    "publication_title":"Time to epinephrine treatment is associated with the risk of mortality in children who achieve sustained ROSC after traumatic out-of-hospital cardiac arrest.",
+    "article_type":"pubmed",
+    "journal":"The journal of allergy and clinical immunology. In practice",
+    "date":"2020-03-01 00:00:00.000000"
+  },
+  {
+    "atccode":"6302001",
+    "drug":"ISOPRENALINE",
+    "id":"9",
+    "publication_title":"Gold nanoparticles synthesized from Euphorbia fischeriana root by green route method alleviates the isoprenaline hydrochloride induced myocardial infarction in rats.",
+    "article_type":"pubmed",
+    "journal":"Journal of photochemistry and photobiology. B, Biology",
+    "date":"2020-01-01 00:00:00.000000"
+  },
+  {
+    "atccode":"R01AD",
+    "drug":"BETAMETHASONE",
+    "id":"10",
+    "publication_title":"Clinical implications of umbilical artery Doppler changes after betamethasone administration",
+    "article_type":"pubmed",
+    "journal":"The journal of maternal-fetal & neonatal medicine",
+    "date":"2020-01-01 00:00:00.000000"
+  },
+  {
+    "atccode":"R01AD",
+    "drug":"BETAMETHASONE",
+    "id":"11",
+    "publication_title":"Effects of Topical Application of Betamethasone on Imiquimod-induced Psoriasis-like Skin Inflammation in Mice.",
+    "article_type":"pubmed",
+    "journal":"Journal of back and musculoskeletal rehabilitation",
+    "date":"2020-01-01 00:00:00.000000"
+  },
+  {
+    "atccode":"A03BA",
+    "drug":"ATROPINE",
+    "id":"",
+    "publication_title":"Comparison of pressure BETAMETHASONE release, phonophoresis and dry needling in treatment of latent myofascial trigger point of upper trapezius ATROPINE muscle.",
+    "article_type":"pubmed",
+    "journal":"The journal of maternal-fetal & neonatal medicine",
+    "date":"2020-03-01 00:00:00.000000"
+  },
+  {
+    "atccode":"R01AD",
+    "drug":"BETAMETHASONE",
+    "id":"",
+    "publication_title":"Comparison of pressure BETAMETHASONE release, phonophoresis and dry needling in treatment of latent myofascial trigger point of upper trapezius ATROPINE muscle.",
+    "article_type":"pubmed",
+    "journal":"The journal of maternal-fetal & neonatal medicine",
+    "date":"2020-03-01 00:00:00.000000"
+  }
+]

@@ -2,7 +2,7 @@ from datetime import datetime
 
 
 
-def standardize_date_format(raw_date):
+def standardize_date_format(raw_date) -> str:
     # Should be made with a unit test
 
     accepted_formats = [

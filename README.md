@@ -23,7 +23,13 @@ De plus la séparation en plusieurs opérateurs dans notre orchestrateur a de no
 
 Nous allons donc partir sur cette seconde solution. Je ne vais pas installer Airflow ou un autre orchestrateur, mais via le nommage de mes fichiers on pourra comprendre ou se retrouverait chaque fonction dans un tel projet.
 
-Nous allons donc crée 3 datasets : raw (l'input), cleaned (l'étape intermédiaire) et aggregated (l'output). On note que cela pourrait correspondre à datalake / datawarehous layer 1, datawarehouse layer 2.
+Nous allons donc crée 3 datasets, dans le dossier 'data' : raw (l'input), cleaned (l'étape intermédiaire) et aggregated (l'output). On note que cela pourrait correspondre à datalake / datawarehous layer 1, datawarehouse layer 2.
+
+Pour le format du graph nous allons privilégier la ré utilisation du fichier sortant. 
+Pour cela nous allons le stocker comme si nous stockions une table sql, avec une ligne par publication de d'article. 
+Un médicament aura donc plusieurs lignes. 
+Cela gardera un format simple, ré utilisable. Une autre solution aurait été de fournir un json plus complexe, avec une clé unique de médicament, contenant des sous dossiers etc... 
+Mais cette seconde utilisation complique grandement la récupération et le requétage de ces informations. 
 
 Pour lancer le projet, depuis un nouveau venv : 
 ```
@@ -31,3 +37,4 @@ cd part_1/code
 pip install -r requirements.txt
 python -m drug_references_dag.py
 ```
+Vous pourrez alors trouver le résultat dans data/aggregated/mentioned_drugs.json

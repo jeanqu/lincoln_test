@@ -8,7 +8,7 @@ class RawToCleanedOperator():
     # Operator that take a list of files as inputs, 
     # apply a cleaning function if given as parameter,
     # force a schema if given as parameter (not implemented yet)
-    # and write the result in a parquet file 
+    # and write the result in a json file. 
 
     def __init__(self,
                  input_file_paths: list,
@@ -31,9 +31,7 @@ class RawToCleanedOperator():
         if self.cleaning_function is not None:
             df = self.cleaning_function(df)
 
-        print(df)
-
-        self.local_data_connector_hook.write_parquet_file(df, self.output_file_path)
+        self.local_data_connector_hook.write_json_file(df, self.output_file_path)
 
 
 
