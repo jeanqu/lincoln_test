@@ -1,4 +1,5 @@
 from pandasql import *
+import pandas as pd
 
 from hooks.local_data_connector_hook import LocalDataConnectorHook
 
@@ -46,7 +47,7 @@ class FindDrugsMentionedOperator():
 
 
 
-    def __join_source_with_drug_on_string_contains(self, df_drugs, df_contains, key_contains, article_type) -> pd.DataFrame:
+    def __join_source_with_drug_on_string_contains(self, df_drugs: pd.DataFrame, df_contains: pd.DataFrame, key_contains: str, article_type: str) -> pd.DataFrame:
         # Here we use pandasql to make the custom join request, SQL being the easiest way to read code for simple joins.
         # We will not output the drugs that are not mentioned in the result
 
