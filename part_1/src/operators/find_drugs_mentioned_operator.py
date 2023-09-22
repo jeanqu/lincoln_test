@@ -12,12 +12,15 @@ class FindDrugsMentionedOperator():
                  clinical_trials_path: str,
                  pubmed_path: str,
                  drugs_path: str,
-                 output_path: str
+                 output_path: str,
+                 dry_run: bool = False,  # If dry_run is true, no data is writen.
+
     ):
         self.clinical_trials_path = clinical_trials_path
         self.pubmed_path = pubmed_path
         self.drugs_path = drugs_path
         self.output_path = output_path
+        self.dry_run = dry_run
         self.local_data_connector_hook = LocalDataConnectorHook()
 
     def execute(self):
@@ -42,7 +45,10 @@ class FindDrugsMentionedOperator():
 
         union_drugs_and_pubmed = pd.concat([join_drugs_and_clinical_trials, join_drugs_and_pubmed])
 
-        self.local_data_connector_hook.write_json_file(union_drugs_and_pubmed, self.output_path)
+        if not self.dry_run:
+            self.local_data_connector_hook.write_json_file(union_drugs_and_pubmed, self.output_path)
+
+        return union_drugs_and_pubmed
 
 
 

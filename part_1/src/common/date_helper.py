@@ -8,7 +8,7 @@ def standardize_date_format(raw_date: str) -> str:
     accepted_formats = [
         '%d %B %Y', # 1 January 2020
         '%d/%m/%Y', # 25/05/2020,
-        '%Y-%m-%d'
+        '%Y-%m-%d'  # 2020-05-20
     ]
 
     for format in accepted_formats:

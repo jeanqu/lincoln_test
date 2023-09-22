@@ -1,5 +1,6 @@
 import pandas as pd
 import json5
+import os
 
 
 class LocalDataConnectorHook():
@@ -23,23 +24,25 @@ class LocalDataConnectorHook():
             raise TypeError(f"Cannot read {input_file_path} only csv are json are allowed") 
 
     def __read_csv_file(self, input_file_path: str) -> pd.DataFrame:
-        return pd.read_csv(self.__get_relative_data_path_from_suffix(input_file_path))
+        return pd.read_csv(self.__get_absolute_data_path_from_suffix(input_file_path))
 
     def __read_json_file(self, input_file_path: str) -> pd.DataFrame:
         try:
-            return pd.read_json(self.__get_relative_data_path_from_suffix(input_file_path))
+            return pd.read_json(self.__get_absolute_data_path_from_suffix(input_file_path))
         except ValueError:
             # We need to use a more tolerant json reader library
-            with open(self.__get_relative_data_path_from_suffix(input_file_path)) as fp:
+            with open(self.__get_absolute_data_path_from_suffix(input_file_path)) as fp:
                 json_data = json5.load(fp)
             return pd.DataFrame(json_data)
 
     def __get_file_format_by_suffix(self, input_file_path: str) -> str:
         return input_file_path.split('.')[-1]
 
-    def __get_relative_data_path_from_suffix(self, input_file_path: str) -> str:
-        return f'../data/{input_file_path}'
+    def __get_absolute_data_path_from_suffix(self, input_file_path: str) -> str:
+        # Since we launch the script locally we find the data path base on this file path
+        current_directory = os.path.dirname(__file__)
+        return f'{current_directory}/../../data/{input_file_path}'
 
     def write_json_file(self, df, output_file_path: str):
-        print(f'Writing file {self.__get_relative_data_path_from_suffix(output_file_path)}')
-        df.to_json(self.__get_relative_data_path_from_suffix(output_file_path), orient = 'records', indent=2 )
+        print(f'Writing file {self.__get_absolute_data_path_from_suffix(output_file_path)}')
+        df.to_json(self.__get_absolute_data_path_from_suffix(output_file_path), orient = 'records', indent=2 )
